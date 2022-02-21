@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="card mt-2" style="width: 18rem;">
+                <div class="card-header bg-primary text-white display-5">
+                  Users
+                </div>
+                <ul class="list-group list-group-flush" *ngFor="let user of userData">
+                  <li class="list-group-item">{{user.name}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card mt-2" style="width: 18rem;">
+                <div class="card-header bg-primary text-white display-5">
+                  City
+                </div>
+                <ul class="list-group list-group-flush" *ngFor="let user of userData">
+                  <li class="list-group-item">{{user.address.city}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card mt-2" style="width: 18rem;">
+                <div class="card-header bg-primary text-white display-5">
+                  Comapny
+                </div>
+                <ul class="list-group list-group-flush" *ngFor="let user of userData">
+                  <li class="list-group-item">{{user.company.name}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card mt-2" style="width: 21rem;">
+                <div class="card-header bg-primary text-white display-5">
+                    catchPhrase
+                </div>
+                <ul class="list-group list-group-flush" *ngFor="let user of userData">
+                  <li class="list-group-item">{{user.company.catchPhrase}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
